@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playwrite+AR:wght@100..400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+body{
+    /* background-color: black; */
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #F09AA9;
+    overflow-x: hidden;
+}
+
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: antiquewhite;
+  width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+.loadingnext{
+    content: "";
+    position: relative;
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    left: 7px;
+    width: 190px;
+    height: 190px;
+    background-color: rgb(78, 74, 74);
+}
+.topnav{
+    background-color: yellow;
+    width: 150vw;
+    overflow-x: hidden;
+    position: relative;
+    right: 492px;
+
+}
+.topnavanimation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: orangered;
+    font-size: larger;
+    font-weight: 600;
+    padding: 15px 15px;
+}
+.loading img {
+    width: 110%;
+    z-index: 2;
+    /* background-color: #c1c4c4; */
+}.scroll{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-marquee {
+  position: relative;
+  display:flex; 
+  align-items:center;
+  overflow-x: hidden;
+}
+
+.text-single {
+  width: 100vw;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+    margin: 0;
+  will-change: transform;
+}
+
+.text {
+  padding: 0;
+  font-size: 20px;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+}
+.secondnav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    padding: 40px 90px;
+    font-size: xx-large;
+    color: rgb(129, 54, 79);
+    
+}
+.i  {
+    cursor: pointer;
+}
+.section{
+    display: flex;
+    align-items: center;
+   margin-bottom: 80px;
+
+
+}
+.section > div{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stars{
+    position: absolute;
+    color: orangered;
+    font-size: 100px;
+    right: 40%;
+    z-index: 0;
+}
+.star1{
+    position: absolute;
+    color: orangered;
+    font-size: 200px;
+    transform: rotate(100deg);
+    top: 200px;
+    width: min-content;
+    right: -20%;
+    z-index: 0;
+}
+.star2{
+    position: absolute;
+    color: orangered;
+    font-size: 200px;
+    transform: rotate(100deg);
+    left: -400px;
+    bottom: 260px;
+    z-index: 0;
+}
+.sectiontext{
+    font-size: 100px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+}
+.section2{
+    background-image: url("./assets/sectionimg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.section3{
+    background-color: rgb(61, 20, 20);
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0px 180px;
+    font-size: xx-large;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+    text-align: center;
+    position: relative;
+}
+.section3 svg{
+    position: absolute;
+    top: -350px;
+    left: 0;
+}
+.outer{
+    overflow-x: hidden;
+}
+.slider{
+    display: flex;
+    width: 200vw;
+}
+section{
+    height: 100vh;
+    width: 100%;
+
+}
+.inner{
+
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  
+}
+.cardtext{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    font-size: 25vw;
+    font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+    
+}
+.inner img{
+    width: 25%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.cardbtn button{
+    border: 2px solid pink;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    padding: 20px 30px;
+    font-size: medium;
+    font-weight: 600;
+}
+.section4{
+   height: 85vh;
+   position: relative;
+   /* border: 2px solid black; */
+   display:grid;
+   grid-template-columns: 8fr 2fr ;
+   grid-template-rows: auto auto;
+   gap: 140px;
+   padding: 140px;
+   background-color: #3B0016;
+   
+}
+.section4 img{
+    width: 150px;
+}
+.section4header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    text-align: center;
+    font-weight: bolder;  color: #B16BDF;  font-family: 'Manrope', sans-serif;
+    font-weight: 900;
+    z-index: 10;
+      
+}
+.sec4sidetext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     /* border: 2px solid black;  */
+     font-size: 20px;
+     width:300px;
+     text-align: center;
+     color: white;
+     z-index: 1;
+
+   
+}
+.section4 svg{
+    position: absolute;
+    top: -320px;
+    left: 0;
+}
+.section5 svg{
+    position: absolute;
+    top: -140px;
+    /* border: 2px solid black; */
+    left: 0;
+}
+.section5 svg:last-child{
+    position: absolute;
+    top: 200px;
+    /* border: 2px solid black; */
+    left: 0;
+}
+.section5{
+    position: relative;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #461961;
+    font-size: 70px;
+    background-color: #B26CE1;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+.textfirstpart{
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+.textsecondpart{
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+.section6 img{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.section7 {
+    position: relative;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #461961;
+    font-size: 70px;
+    background-color: #B26CE1;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+.section7 svg{
+    position: absolute;
+    top: -140px;
+    /* border: 2px solid black; */
+    left: 0;
+}
